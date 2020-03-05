@@ -11,6 +11,25 @@ html {
   scroll-behavior: smooth;
 }
 
+#section3 { 
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+
+.card {
+ 
+  width: 25%;
+  border: 1px solid #333;
+  
+}
+
+
+#section4 {
+  float: right;
+  width: 50%;
+  text-align: center;
+}
 
 .quotes {
   margin: 0;

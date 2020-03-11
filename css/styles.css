@@ -68,6 +68,47 @@ img {
 
 }
 
+#section5 {
+  float: left;
+  width: 100%;
+}
+
+.circles {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+#circle1  {
+  width: 150px;
+  height: 150px;
+  background-color: blue;
+  border-radius: 50%;
+
+}
+
+#circle2  {
+  width: 150px;
+  height: 150px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+#circle3  {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+#circle4  {
+  width: 150px;
+  height: 150px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+
 
 /* HORIZONTAL MENU */
 

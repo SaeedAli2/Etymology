@@ -76,8 +76,12 @@ img {
 .circles {
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
 }
 
+.circletext {
+  text-align: center;
+}
 
 #circle1  {
   width: 150px;
@@ -108,6 +112,12 @@ img {
   border-radius: 50%;
 }
 
+#circle5  {
+  width: 150px;
+  height: 150px;
+  background-color:orchid;
+  border-radius: 50%;
+}
 
 
 /* HORIZONTAL MENU */

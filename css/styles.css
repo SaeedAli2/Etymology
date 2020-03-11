@@ -119,6 +119,38 @@ img {
   border-radius: 50%;
 }
 
+#section6 {
+float: left;
+width: 100%;
+}
+
+.contactusform {
+  max-width: 500px;
+  margin: auto;
+}
+
+.contactustext {
+  display: flex;
+  width: 100%;
+  margin: 1em;
+  padding: 10px;
+}
+
+#enterdetails {
+  display: flex;
+  width: 100%;
+  margin: 1em;
+  padding: 11px;
+}
+
+.contactusbutton {
+  display: flex;
+  margin: 1em;
+  margin-left: 50%;
+  
+  
+}
+
 
 /* HORIZONTAL MENU */
 

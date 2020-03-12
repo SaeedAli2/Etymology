@@ -3,13 +3,22 @@
 /* applies to screens smaller than 500px (first breakpoint) */
 /* and above unless overwritten below */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     background: #fcc;
   } 
 
-html {
-  scroll-behavior: smooth;
+header {
+  display: flex;
+  
 }
+
+#section2 {
+  text-align: center;
+} 
 
 ul {
   margin: auto;
@@ -18,7 +27,8 @@ ul {
   padding: 20px 20px;
   border: 2px solid #333;
   background-color: orchid;
-  list-style: none;
+  list-style: square;
+  border-radius: 20px;
 }
 
 #ng {

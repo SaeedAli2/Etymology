@@ -11,12 +11,56 @@ html {
   scroll-behavior: smooth;
 }
 
-.quotes {
-  margin: 0;
-  padding-left: 27%;
-  line-height: 5em;
-  border: 1px solid #333;
+ul {
+  margin: auto;
+  width: fit-content;
+  line-height: 4em;
+  padding: 20px 20px;
+  border: 2px solid #333;
+  background-color: orchid;
+  list-style: none;
 }
+
+#ng {
+  border: 1px solid #333;
+  background-color: purple;
+  margin-bottom: 10px;
+
+}
+
+#nb {
+  border: 1px solid #333;
+  background-color: blueviolet;
+  margin-bottom: 10px;
+}
+
+#nm {
+  border: 1px solid #333;
+  background-color: purple;
+  margin-bottom: 10px;
+}
+
+#nv {
+  border: 1px solid #333;
+  background-color: blueviolet;
+  margin-bottom: 10px;
+}
+
+#nc {
+  border: 1px solid #333;
+  background-color: purple;
+
+}
+
+
+
+
+
+
+
+
+
+
 
 #section3 { 
   

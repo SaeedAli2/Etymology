@@ -260,8 +260,10 @@ nav a:hover {
     /* applies to screens wider than 999px */
   
     body {
-      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); 
-      background-image: url(../images/wooden.jpg);
-    } 
-  }
   
+      background-image: url(../images/desert.jpg);
+         
+      
+    }
+      
+    }

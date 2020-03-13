@@ -8,13 +8,9 @@ html {
 }
 
 body {
-    background: #fcc;
-  } 
+  background: #fcb;
+} 
 
-header {
-  display: flex;
-  
-}
 
 #section2 {
   text-align: center;
@@ -214,9 +210,16 @@ header h1 {
 }
 
 header {
-  background: #ccc;
+  display: flex;
   padding: 2em;
-  text-align:center;
+  text-align:left;
+  background-image: url(../images/bookheader.jpg);
+  background-size: 100% ;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: blanchedalmond;
+  text-shadow: black 3px 1px;
+  
 }
 
 nav {
@@ -257,7 +260,8 @@ nav a:hover {
     /* applies to screens wider than 999px */
   
     body {
-      background: #ccf;
+      background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%); 
+      background-image: url(../images/wooden.jpg);
     } 
   }
   

@@ -27,34 +27,38 @@ ul {
   border-radius: 20px;
 }
 
+li {
+  border-radius: 10px;
+}
+
 #ng {
   border: 1px solid #333;
-  background-color: purple;
+  background-color: #deb887;
   margin-bottom: 10px;
 
 }
 
 #nb {
   border: 1px solid #333;
-  background-color: blueviolet;
+  background-color: #EAC391 ;
   margin-bottom: 10px;
 }
 
 #nm {
   border: 1px solid #333;
-  background-color: purple;
+  background-color: #FFD6A5 ;
   margin-bottom: 10px;
 }
 
 #nv {
   border: 1px solid #333;
-  background-color: blueviolet;
+  background-color: rgb(252, 222, 169);
   margin-bottom: 10px;
 }
 
 #nc {
   border: 1px solid #333;
-  background-color: purple;
+  background-color: #FFE4B5;
 
 }
 

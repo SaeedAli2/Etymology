@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background: #fcb;
+  background: #ffccbb;
 } 
 
 
@@ -18,13 +18,15 @@ body {
 
 ul {
   margin: auto;
-  width: fit-content;
+  max-width: fit-content;
+  min-width: 50%;
   line-height: 4em;
   padding: 20px 20px;
   border: 2px solid #333;
   background-color:bisque;
   list-style: square;
   border-radius: 20px;
+  box-shadow: 0 0 4px 0 black;
 }
 
 li {
@@ -52,7 +54,7 @@ li {
 
 #nv {
   border: 1px solid #333;
-  background-color: rgb(252, 222, 169);
+  background-color: #fcdea9;
   margin-bottom: 10px;
 }
 
@@ -142,7 +144,6 @@ img {
 #circle1  {
   width: 150px;
   height: 150px;
-  background-color: blue;
   border-radius: 50%;
   background-image: url(../images/statue.jpg);
   background-position: bottom;
@@ -161,7 +162,6 @@ img {
 #circle3  {
   width: 150px;
   height: 150px;
-  background-color: red;
   border-radius: 50%;
   background-image: url(../images/chess.jpg);
   background-position: center;
@@ -171,7 +171,6 @@ img {
 #circle4  {
   width: 150px;
   height: 150px;
-  background-color: orange;
   border-radius: 50%;
   background-image: url(../images/petra.jpg);
   background-position: left;
@@ -181,7 +180,6 @@ img {
 #circle5  {
   width: 150px;
   height: 150px;
-  background-color:orchid;
   border-radius: 50%;
   background-image: url(../images/writing.jpg);
   background-position: center;
@@ -254,10 +252,17 @@ nav a {
 }
 nav a:hover {
   color: #dfd;
-  background: #797;
+  background: burlywood;
 }
 
-  
+li:hover {
+  color: black;
+  background: bisque;
+  transform: scale(1.04);
+  overflow: hidden;
+}  
+
+
   /* TABLET STYLES */
   
   @media screen and (min-width: 500px) {

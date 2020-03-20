@@ -32,13 +32,13 @@ ul {
 
 li {
   border-radius: 10px;
+  transition: .1s;
 }
 
 #ng {
   border: 1px solid #333;
   background-color: #deb887;
   margin-bottom: 10px;
-
 }
 
 #nb {
@@ -83,6 +83,7 @@ li {
 .books {
   border: 1px solid #333;
 }
+
 
 .bookname {
   min-height: 70px;

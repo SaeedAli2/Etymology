@@ -19,12 +19,11 @@ body {
 
 ul {
   margin: auto;
-  max-width: fit-content;
-  min-width: 50%;
-  line-height: 4em;
+  max-width: 70%;
+  line-height: 2.5em;
   padding: 20px 20px;
   border: 2px solid #333;
-  background-color:bisque;
+  background-color: bisque;
   list-style: square;
   border-radius: 20px;
   box-shadow: 0 0 4px 0 black;
@@ -128,6 +127,7 @@ img {
   width: 100%;
 }
 
+
 .circletext {
   text-align: center;
 }
@@ -141,6 +141,10 @@ img {
   background-size: cover;
 }
 
+#circle1:hover {
+  transform: scale(1.15);
+}
+
 #circle2  {
   width: 150px;
   height: 150px;
@@ -151,6 +155,11 @@ img {
   
 }
 
+#circle2:hover {
+  transform: scale(1.15);
+}
+
+
 #circle3  {
   width: 150px;
   height: 150px;
@@ -160,6 +169,11 @@ img {
   background-size: cover;
 }
 
+#circle3:hover {
+  transform: scale(1.15);
+}
+
+
 #circle4  {
   width: 150px;
   height: 150px;
@@ -168,6 +182,11 @@ img {
   background-position: left;
   background-size: cover;
 }
+
+#circle4:hover {
+  transform: scale(1.15);
+}
+
 
 #circle5  {
   width: 150px;
@@ -179,6 +198,11 @@ img {
   
 
 }
+
+#circle5:hover {
+  transform: scale(1.15);
+}
+
 
 #section6 {
   float: left;
@@ -261,6 +285,12 @@ li:hover {
   
     /* applies to screens wider than 499px */
     
+    ul {
+      margin: auto;
+      max-width: 80%;
+      line-height: 4em;
+    }
+    
     
   
     .cardleft {
@@ -290,7 +320,9 @@ li:hover {
   
     /* applies to screens wider than 999px */
   
-    
+    ul {
+      max-width: 50%;
+    }
       
 
       .cardleft {

@@ -71,11 +71,16 @@ li {
   text-align: center;
 }
 
+.headingcards {
+  height: 2em;
+}
+
 .cardleft {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-  
+  border: 4px solid black;
+  margin: 2%;
 }
 
 
@@ -106,7 +111,8 @@ img {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-  
+  border: 4px solid black;
+  margin: 2%;
 }
 
 .books2 {
@@ -324,21 +330,17 @@ li:hover {
     
   
     .cardleft {
-      display: grid;
+      
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      border: 4px solid black;
-      margin: 2%;
+      
       
     }
     
     
     .cardright {
-      display: grid;
+     
       grid-template-columns: repeat(2, 1fr);
-      gap: 10px;
-      border: 4px solid black;
-      margin: 2%;
+  
       
     }
   

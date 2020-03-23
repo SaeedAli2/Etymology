@@ -301,6 +301,17 @@ li:hover {
   overflow: hidden;
 }  
 
+#btnscroll {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  background-image: linear-gradient(135deg, #FFE985 10%, #DEB887 100%);
+
+}
+
 
   /* TABLET STYLES */
   

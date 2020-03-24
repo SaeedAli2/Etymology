@@ -12,8 +12,13 @@ body {
   background-repeat: round;    
   }
 
+.subheadings {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
-#section2 {
+
+#section1 {
   text-align: center;
 } 
 
@@ -34,46 +39,44 @@ li {
   transition: .2s;
 }
 
-#ng {
+#quote1 {
   border: 1px solid #333;
   background-color: #deb887;
   margin-bottom: 10px;
 }
 
-#nb {
+#quote2 {
   border: 1px solid #333;
   background-color: #EAC391 ;
   margin-bottom: 10px;
 }
 
-#nm {
+#quote3 {
   border: 1px solid #333;
   background-color: #FFD6A5 ;
   margin-bottom: 10px;
 }
 
-#nv {
+#quote4 {
   border: 1px solid #333;
   background-color: #fcdea9;
   margin-bottom: 10px;
 }
 
-#nc {
+#quote5 {
   border: 1px solid #333;
   background-color: #FFE4B5;
 
 }
 
-#section3 { 
+#section2 { 
   
   float: left;
   width: 50%;
   text-align: center;
 }
 
-.headingcards {
-  height: 2em;
-}
+
 
 .cardleft {
   display: grid;
@@ -101,7 +104,7 @@ img {
   max-height: 350px;
 }
 
-#section4 {
+#section3 {
   float: right;
   width: 50%;
   text-align: center;
@@ -120,7 +123,7 @@ img {
 
 }
 
-#section5 {
+#section4 {
   float: left;
   width: 100%;
   text-align: center;
@@ -210,7 +213,7 @@ img {
 }
 
 
-#section6 {
+#section5 {
   float: left;
   width: 100%;
   text-align: center;

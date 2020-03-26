@@ -85,6 +85,7 @@ li {
   gap: 10px;
   border: 4px solid black;
   margin: 2%;
+  box-shadow: 0 1px 9px 1px black;
 }
 
 
@@ -106,8 +107,8 @@ img {
 }
 
 .bookimage:hover {
-  background: rgb(242,255,11);
-  background: linear-gradient(90deg, rgba(242,255,11,1) 1%, rgba(255,8,8,1) 100%);
+  background: rgb(251,211,63);
+  background: linear-gradient(90deg, rgba(251,211,63,1) 24%, rgba(245,79,86,1) 48%, rgba(252,70,196,1) 100%);
 }
 
 #section3 {
@@ -122,6 +123,7 @@ img {
   gap: 10px;
   border: 4px solid black;
   margin: 2%;
+  box-shadow: 0 1px 9px 1px black;
 }
 
 .books2 {
@@ -155,19 +157,16 @@ img {
   background-image: url(../images/statue.jpg);
   background-position: bottom;
   background-size: cover;
+  box-shadow: 0 0 10px 0 black;
   
+ 
 }
 
 #circle1:hover {
   transform: scale(1.15);
-  background-color: grey;
+  background-color: darkseagreen;
+  background-blend-mode: luminosity;
   
-  background-size: cover;
-  background-blend-mode: difference;
-  background-position:
-      calc(50% — 1px) calc(50% — 1px),
-      calc(50% + 1px) calc(50% + 1px);
-  filter: brightness(3) grayscale(1);
 }
 
 #circle2  {
@@ -177,13 +176,16 @@ img {
   background-image: url(../images/space.jpg);
   background-size: cover;
   background-position: bottom;
+  box-shadow: 0 0 10px 0 black;
+  
   
 }
 
 #circle2:hover {
   transform: scale(1.15);
-  background-color: lavender;
-  background-blend-mode: difference;
+  background-color: plum;
+  background-blend-mode: luminosity;
+
 }
 
 
@@ -194,13 +196,15 @@ img {
   background-image: url(../images/chess.jpg);
   background-position: center;
   background-size: cover;
+  box-shadow: 0 0 10px 0 black;
   
 }
 
 #circle3:hover {
   transform: scale(1.15);
-  background-color: grey;
-  background-blend-mode: screen;
+  background-color: lightsteelblue;
+  background-blend-mode: luminosity;
+  
 }
 
 
@@ -211,12 +215,14 @@ img {
   background-image: url(../images/petra.jpg);
   background-position: left;
   background-size: cover;
+  box-shadow: 0 0 10px 0 black;
+  
 }
 
 #circle4:hover {
   transform: scale(1.15);
   background-color: peru;
-  background-blend-mode: screen;
+    background-blend-mode: luminosity;
 }
 
 
@@ -227,14 +233,15 @@ img {
   background-image: url(../images/writing.jpg);
   background-position: center;
   background-size: cover;
+  box-shadow: 0 0 10px 0 black;
   
 
 }
 
 #circle5:hover {
   transform: scale(1.15);
-  background-color: grey;
-  background-blend-mode: screen;
+  background-color: rosybrown;
+  background-blend-mode: luminosity;
 }
 
 

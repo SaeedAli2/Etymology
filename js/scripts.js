@@ -1,4 +1,4 @@
-
+"use strict";
 const scrollUp = document.getElementById ("btnscroll");
 
  window.onscroll = function() {scrollFunction()};

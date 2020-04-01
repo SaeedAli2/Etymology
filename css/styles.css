@@ -5,19 +5,27 @@
 
 html {
   scroll-behavior: smooth;
+  
 }
 
 body {
   background-image: url(../images/desert.jpg);
-  background-repeat: round;    
-  }
+  background-repeat: round;   
+  background-color: bisque; 
+  animation-name: pageopen;
+  animation-duration: 5s;
+}
+
+@keyframes pageopen {
+  from {opacity: 0};
+  to {opacity: 1};  
+}
 
 .subheadings {
   margin-top: 40px;
   margin-bottom: 40px;
   height: 1em;
 }
-
 
 #section1 {
   text-align: center;
@@ -76,8 +84,6 @@ li {
   width: 50%;
   text-align: center;
 }
-
-
 
 .cardleft {
   display: grid;
@@ -152,7 +158,6 @@ img {
   width: 100%;
   
 }
-
 
 .circletext {
   text-align: center;
@@ -282,7 +287,7 @@ img {
   border: none;
 }
 
-.contactusbutton {
+#contactusbutton {
   width: 100px;
   margin-bottom: 20px;
   padding: 5px;
@@ -321,25 +326,29 @@ nav {
 }
 
 .menu {
-  background: #555;
+  background: #333;
   text-align: center;
-  color: #fff;
-  line-height: 2em;
+  color: floralwhite;
+  line-height: 2.5em;
+  border-bottom: 1.5px solid blanchedalmond;
 }
 .menu-toggle {
   display: flex;
+  
 }
 
 .menu:hover + nav,
 nav:hover {
   display: flex;
+  
 } 
 
 nav a {
   padding: 1.25em 1.5em;
-  color: #ccc;
+  color: floralwhite;
   text-decoration: none;
   transition: all 1.5s;
+  text-align: center;
 }
 nav a:hover {
   color: #dfd;
@@ -365,6 +374,64 @@ li:hover {
   border: 2px solid beige;
 }
 
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  /* Modal Content/Box */
+.modaltext {
+  
+  margin: 5% auto;
+  padding: 20px;
+  border: 4px solid blanchedalmond;
+  width: 50%;
+  height: 60%;
+  background-image: url(../images/modalpage.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 2em;
+  transition: ease-out 0.2s;
+  animation-name: smoothopen;
+  animation-duration: 0.75s;
+}
+
+@keyframes smoothopen {
+  from {opacity: 0};
+  to {opacity: 1};
+}
+
+.modaltext:hover {
+  
+  background-image: url(../images/secondmodal.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease-in 0.2s;
+}
+
+/* The Close Button */
+.exitmodal {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.exitmodal:hover,
+.exitmodal:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
   /* TABLET STYLES */
   

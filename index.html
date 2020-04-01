@@ -17,6 +17,7 @@
     
   
   <div class="menu" id="menu-toggle">MENU</div>
+  
   <nav>
     <a href="#section1">Philosophical quotes</a>
     <a href="#section2">Books completed</a>
@@ -196,40 +197,31 @@
         </div>
 
       </div>
-      
-      <p>
-        This website contains inspirational quotes alongside displaying a list of books that I have read and those I have yet to read. 
-      It is beneficial as I can use this in the future and make regular updates as my book library increases. 
-      Furthermore as I become more knowledgable in regards to coding,
-      I can implement many additional features which will be pleasing to me when I look through the collection.
-      It is a website which will hopefully be regularly updated even after the submission for the assignment.
-      </p>
-        
+          
     </section>
 
     <section id="section5">
       <h2 class="subheadings">Contact us</h2>
-      <form class="contactusform"  action="index.html" method="post">
-        <input type="text" class="contactustext" placeholder="Enter your name">
-        <input type="text" class="contactustext" placeholder="Enter your email">
-        <input type="text" class="contactustext" placeholder="Select your favourite genre">
+      <form class="contactusform"  action="index.html" method="POST">
+        <input type="text" id="name"  class="contactustext" placeholder="Enter your name">
+        <input type="text" id="email" class="contactustext" placeholder="Enter your email">
+        <input type="text" id ="genre" class="contactustext" placeholder="What is your favourite genre">
         <textarea name="entermessage" id="enterdetails" cols="30" rows="10" placeholder="Enter your message"></textarea>
-        <input type="button" class="contactusbutton" value="Submit">
+        <button id="contactusbutton" type="button">Submit</button>
       </form>
 
     </section>
     
-    <div id = modalscreen class="modal"> 
+    <div id = "modalscreen" class="modal"> 
       <div class="modaltext"> 
-        <span class="exitmodal">&CircleTimes;</span>
-        <p>Thank you for your submission</p>
+        <span class="exitmodal">&times;</span>
       </div>  
 
-      </div>
-
-
-
     </div>
+
+
+
+    
 
 
   </main>

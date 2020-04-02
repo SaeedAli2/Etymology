@@ -55,7 +55,12 @@ window.onclick = function(event) {
   }
 }
 
+/*form submission button usable after required field filled out*/
 
+/*const contactusForm = document.querySelector(".contactusform");
 
-
+contactusForm.addEventListener('submit', ev => {
+    console.log(ev);
+    ev.preventDefault();
+})*/
 

@@ -387,22 +387,23 @@ li:hover {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
   /* Modal Content/Box */
-.modaltext {
-  
-  margin: 5% auto;
-  padding: 20px;
-  border: 4px solid blanchedalmond;
-  width: 50%;
-  height: 60%;
-  background-image: url(../images/modalpage.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 2em;
-  transition: ease-out 0.2s;
-  animation-name: smoothopen;
-  animation-duration: 0.75s;
+  .modaltext {
+    margin: 50% auto;
+    padding: 20px;
+    border: 4px solid blanchedalmond;
+    width: 80%;
+    height: 34%;
+    background-image: url(../images/modalpage.jpg);
+    background-size: 35em;
+    background-repeat: no-repeat;
+    border-radius: 2em;
+    transition: ease-out 0.2s;
+    animation-name: smoothopen;
+    animation-duration: 0.75s;
+    background-position-x: 40%;
+    
 }
+
 
 @keyframes smoothopen {
   from {opacity: 0;}
@@ -410,11 +411,7 @@ li:hover {
 }
 
 .modaltext:hover {
-  
   background-image: url(../images/secondmodal.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   transition: ease-in 0.2s;
 }
 
@@ -479,8 +476,19 @@ li:hover {
       
     }
   
+    
+    .modaltext {
   
-  
+      margin: 10% auto;
+      height: 60%;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 2em;
+      transition: ease-out 0.2s;
+      animation-name: smoothopen;
+      animation-duration: 0.75s;
+    }
+    
   }
   
   
@@ -503,7 +511,13 @@ li:hover {
     .cardright {
       grid-template-columns: repeat(3, 1fr);
     }
+     
+    .modaltext {
+      width: 50%;
+      margin: 5% auto;
       
+    }
+
     }
 
 

@@ -449,10 +449,6 @@ li:hover {
       display: none;
     }
 
-    .subheadings {
-      height: none;
-    }
-
     ul {
       margin: auto;
       max-width: 80%;
@@ -523,13 +519,9 @@ li:hover {
 
     @media screen and (max-width:300px) {
       header {
-        background-image: repeat;
         background-size: cover;
       }
 
-      header h1 {
-        size: 1em;
-      }
 
       #section2 {
         width: 100%;

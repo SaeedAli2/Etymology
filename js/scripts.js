@@ -21,8 +21,6 @@ const scrollUp = document.getElementById ("btnscroll");
 
 /*const helper functions for form*/
 
-const contactusForm = document.getElementsByClassName("contactusform");
-
 const userName = document.getElementById("name");
 
 const emailAddress = document.getElementById("email");
@@ -41,10 +39,6 @@ const span = document.getElementsByClassName("exitmodal")[0];
 
 /*modal onclick functions*/
 
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
 span.onclick = function() {
   modal.style.display = "none";
 }
@@ -57,10 +51,13 @@ window.onclick = function(event) {
 
 /*form submission button usable after required field filled out*/
 
-/*const contactusForm = document.querySelector(".contactusform");
+const contactusForm = document.querySelector(".contactusform");
 
 contactusForm.addEventListener('submit', ev => {
     console.log(ev);
+    modal.style.display = "block";
     ev.preventDefault();
-})*/
+})
 
+
+  

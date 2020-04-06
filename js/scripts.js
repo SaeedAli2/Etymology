@@ -19,18 +19,6 @@ const scrollUp = document.getElementById ("btnscroll");
   }
 ) 
 
-/*const helper functions for form*/
-
-const userName = document.getElementById("name");
-
-const emailAddress = document.getElementById("email");
-
-const bookGenre = document.getElementById("genre");
-
-const enterDetails = document.getElementById("enterdetails")
-
-const btn = document.getElementById("contactusbutton");
-
 /*const helper functions for modal*/
 
 const modal = document.getElementById("modalscreen");
@@ -57,7 +45,32 @@ contactusForm.addEventListener('submit', ev => {
     console.log(ev);
     modal.style.display = "block";
     ev.preventDefault();
+    contactusForm.reset();
 })
 
+/*quotes api*/
 
+fetch('https://philosophy-quotes-api.glitch.me/quotes')
+  .then(response => response.json())
+  .then(json => console.log(json))
   
+  .then(function(data) {
+    console.log(data);
+    //jsonData = data;//
+    
+  })
+
+const firstQuote = document.getElementById("quote1");  
+
+/*This works when commented out by changing the first quote when clicked on but does not use the obtained jsonData 
+x = "hello";
+var object, x;
+
+firstQuote.onclick = function() {
+    firstQuote.innerHTML = x; 
+    
+}*/
+
+
+
+

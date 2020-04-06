@@ -5,7 +5,6 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
 body {
@@ -14,6 +13,12 @@ body {
   background-color: bisque; 
   animation-name: pageopen;
   animation-duration: 5s;
+  float: left;
+  margin: 0;
+}
+
+main {
+  float: left;
 }
 
 @keyframes pageopen {
@@ -75,11 +80,9 @@ li {
 #quote5 {
   border: 1px solid #333;
   background-color: #FFE4B5;
-
 }
 
 #section2 { 
-  
   float: left;
   width: 50%;
   text-align: center;
@@ -94,11 +97,9 @@ li {
   box-shadow: 0 1px 9px 1px black;
 }
 
-
 .books {
   border: 1px solid #333;
 }
-
 
 .bookname {
   min-height: 70px;
@@ -115,14 +116,11 @@ img {
 .bookimageleft:hover {
   background: #fbd33f;
   background: linear-gradient(90deg, #fbd33f 24%, #f54f56 48%, #fc46c4 100%);
-  
 }
 
 .bookimageright:hover {
-  
   background: rgb(251,211,63);
   background: linear-gradient(270deg, rgba(251,211,63,1) 24%, rgba(245,79,86,1) 48%, rgba(252,70,196,1) 100%);
-
 }
 
 #section3 {
@@ -142,7 +140,6 @@ img {
 
 .books2 {
   border: 1px solid #333;
-
 }
 
 #section4 {
@@ -156,7 +153,6 @@ img {
   justify-content: space-evenly;
   flex-wrap: wrap;
   width: 100%;
-  
 }
 
 .circletext {
@@ -171,15 +167,12 @@ img {
   background-position: bottom;
   background-size: cover;
   box-shadow: 0 0 10px 0 black;
-  
- 
 }
 
 #circle1:hover {
   transform: scale(1.15);
   background-color: grey;
   background-blend-mode: luminosity;
-  
 }
 
 #circle2  {
@@ -190,17 +183,13 @@ img {
   background-size: cover;
   background-position: bottom;
   box-shadow: 0 0 10px 0 black;
-  
-  
 }
 
 #circle2:hover {
   transform: scale(1.15);
   background-color: plum;
   background-blend-mode: luminosity;
-
 }
-
 
 #circle3  {
   width: 150px;
@@ -210,16 +199,13 @@ img {
   background-position: center;
   background-size: cover;
   box-shadow: 0 0 10px 0 black;
-  
 }
 
 #circle3:hover {
   transform: scale(1.15);
   background-color: lightsteelblue;
   background-blend-mode: luminosity;
-  
 }
-
 
 #circle4  {
   width: 150px;
@@ -229,15 +215,13 @@ img {
   background-position: left;
   background-size: cover;
   box-shadow: 0 0 10px 0 black;
-  
 }
 
 #circle4:hover {
   transform: scale(1.15);
   background-color: peru;
-    background-blend-mode: luminosity;
+  background-blend-mode: luminosity;
 }
-
 
 #circle5  {
   width: 150px;
@@ -247,8 +231,6 @@ img {
   background-position: center;
   background-size: cover;
   box-shadow: 0 0 10px 0 black;
-  
-
 }
 
 #circle5:hover {
@@ -256,7 +238,6 @@ img {
   background-color: rosybrown;
   background-blend-mode: luminosity;
 }
-
 
 #section5 {
   float: left;
@@ -299,8 +280,7 @@ img {
 
 /* HORIZONTAL MENU */
 
-body,
-header h1 {
+h1 {
   margin: 0;
 }
 
@@ -314,7 +294,7 @@ header {
   background-repeat: no-repeat;
   color: blanchedalmond;
   text-shadow: black 3px 1px;
-  
+  margin: 0;
 }
 
 nav {
@@ -334,13 +314,11 @@ nav {
 }
 .menu-toggle {
   display: flex;
-  
 }
 
 .menu:hover + nav,
 nav:hover {
   display: flex;
-  
 } 
 
 nav a {
@@ -350,6 +328,7 @@ nav a {
   transition: all 1.5s;
   text-align: center;
 }
+
 nav a:hover {
   color: #dfd;
   background: burlywood;
@@ -375,37 +354,34 @@ li:hover {
 }
 
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  width: 100%; 
+  height: 100%; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
 }
-  /* Modal Content/Box */
-  .modaltext {
-    margin: 50% auto;
-    padding: 20px;
-    border: 4px solid blanchedalmond;
-    width: 80%;
-    height: 34%;
-    background-image: url(../images/modalpage.jpg);
-    background-size: 35em;
-    background-repeat: no-repeat;
-    border-radius: 2em;
-    transition: ease-out 0.2s;
-    animation-name: smoothopen;
-    animation-duration: 0.75s;
-    background-position-x: 40%;
-    
+  
+.modaltext {
+  margin: 50% auto;
+  padding: 20px;
+  border: 4px solid blanchedalmond;
+  width: 80%;
+  height: 34%;
+  background-image: url(../images/modalpage.jpg);
+  background-size: 35em;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+  transition: ease-out 0.2s;
+  animation-name: modalopen;
+  animation-duration: 0.75s;
+  background-position-x: 40%;  
 }
 
-
-@keyframes smoothopen {
+@keyframes modalopen {
   from {opacity: 0;}
   to {opacity: 1;}
 }
@@ -415,7 +391,6 @@ li:hover {
   transition: ease-in 0.2s;
 }
 
-/* The Close Button */
 .exitmodal {
   color: white;
   float: right;
@@ -430,108 +405,87 @@ li:hover {
   cursor: pointer;
 }
 
-  /* TABLET STYLES */
+/* TABLET STYLES */
   
-  @media screen and (min-width: 500px) {
+@media screen and (min-width: 500px) {
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.menu {
+  display: none;
+}
+
+ul {
+  margin: auto;
+  max-width: 80%;
+  line-height: 4em;
+}
+
+.cardleft {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cardright {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.modaltext {
+  margin: 10% auto;
+  height: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 2em;
+  transition: ease-out 0.2s;
+  animation-name: smoothopen;
+  animation-duration: 0.75s;
+}
+    
+}
   
-    /* applies to screens wider than 499px */
-    
-
-    nav {
-      display: flex;
-      justify-content: center;
-      background: #333;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
-
-    .menu {
-      display: none;
-    }
-
-    ul {
-      margin: auto;
-      max-width: 80%;
-      line-height: 4em;
-    }
-    
-    
+/* DESKTOP STYLES */
   
-    .cardleft {
-      
-      grid-template-columns: repeat(2, 1fr);
-      
-      
-    }
+@media screen and (min-width: 1000px) {
+
+ul {
+  max-width: 50%;
+}
     
-    
-    .cardright {
+.cardleft {
+  grid-template-columns: repeat(3, 1fr);   
+}
+
+.cardright {
+  grid-template-columns: repeat(3, 1fr);
+}
      
-      grid-template-columns: repeat(2, 1fr);
-  
-      
-    }
-  
+.modaltext {
+  width: 50%;
+  margin: 5% auto;
+}
+
+}
+
+/* Smaller screens */
+
+@media screen and (max-width:300px) {
+
+header {
+  background-size: cover;
+}
+
+#section2 {
+  width: 100%;
+}
     
-    .modaltext {
-  
-      margin: 10% auto;
-      height: 60%;
-      background-size: cover;
-      background-repeat: no-repeat;
-      border-radius: 2em;
-      transition: ease-out 0.2s;
-      animation-name: smoothopen;
-      animation-duration: 0.75s;
-    }
-    
-  }
-  
-  
-  
-  /* DESKTOP STYLES */
-  
-  @media screen and (min-width: 1000px) {
-  
-    /* applies to screens wider than 999px */
-  
-    ul {
-      max-width: 50%;
-    }
-      
+#section3 {
+  width: 100%;
+}
 
-    .cardleft {
-      grid-template-columns: repeat(3, 1fr);   
-    }
-
-    .cardright {
-      grid-template-columns: repeat(3, 1fr);
-    }
-     
-    .modaltext {
-      width: 50%;
-      margin: 5% auto;
-      
-    }
-
-    }
-
-
-    @media screen and (max-width:300px) {
-      header {
-        background-size: cover;
-      }
-
-
-      #section2 {
-        width: 100%;
-      }
-    
-      #section3 {
-        width: 100%;
-      }
-
-
-    
-    }
+}
 

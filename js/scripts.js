@@ -4,9 +4,9 @@
 
 const scrollUp = document.getElementById ("btnscroll");
 
- window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction()};
 
- function scrollFunction() {
+function scrollFunction() {
     if (document.documentElement.scrollTop > 50) {
       scrollUp.style.display = "block";
     } else {
@@ -54,13 +54,8 @@ fetch('https://philosophy-quotes-api.glitch.me/quotes')
   .then(response => response.json())
   .then(json => console.log(json))
   
-  .then(function(data) {
-    console.log(data);
-    //jsonData = data;//
-    
-  })
-
-const firstQuote = document.getElementById("quote1");  
+  
+//const firstQuote = document.getElementById("quote1");  
 
 /*This works when commented out by changing the first quote when clicked on but does not use the obtained jsonData 
 x = "hello";

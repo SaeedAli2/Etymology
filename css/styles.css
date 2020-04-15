@@ -39,6 +39,8 @@ header {
   margin: 0;
 }
 
+/* Menu styles */
+
 nav {
   display: none;
   clear: both;
@@ -81,6 +83,8 @@ nav a:hover {
   margin-bottom: 40px;
   height: 1em;
 }
+
+/* Section 1 styles */
 
 #section1 {
   text-align: center;
@@ -139,6 +143,8 @@ li:hover {
   background-color: #FFE4B5;
 }
 
+/* Section 2 styles */
+
 #section2 { 
   float: left;
   width: 50%;
@@ -180,6 +186,8 @@ img {
   background: linear-gradient(270deg, rgba(251,211,63,1) 24%, rgba(245,79,86,1) 48%, rgba(252,70,196,1) 100%);
 }
 
+/* Section 3 styles */
+
 #section3 {
   float: right;
   width: 50%;
@@ -198,6 +206,8 @@ img {
 .books2 {
   border: 1px solid #333;
 }
+
+/* Section 4 styles */
 
 #section4 {
   float: left;
@@ -301,6 +311,8 @@ img {
   transition: ease-in-out .25s;
 }
 
+/* Section 5 styles */
+
 #section5 {
   float: left;
   width: 100%;
@@ -350,6 +362,8 @@ img {
   opacity: 90%;
   border: 2px solid beige;
 }
+
+/* Modal styles */
 
 .modal {
   display: none; 

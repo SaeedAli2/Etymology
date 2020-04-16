@@ -7,6 +7,6 @@
 - API data taken from [here](https://philosophy-quotes-api.glitch.me/quotes).
 - Gradient effect for philosophical quotes inspired from [here](https://www.youtube.com/watch?v=dhLcyBCJ0r4).
 - Git solutions implemented from [here](https://www.atlassian.com/git/tutorials/using-branches).
-- Gained beneficial knowledge from all labs and lectures released.
+- Gained beneficial knowledge from all labs, lectures and tutorials.
 - Majority of images used in website taken from [here](https://unsplash.com/).
 - Images for the book covers taken from [Amazon](https://www.amazon.co.uk/) and then reverse Google searched for greater image resolution.

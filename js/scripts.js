@@ -50,11 +50,17 @@ contactusForm.addEventListener('submit', ev => {
 
 /*quotes api*/
 
-fetch('https://philosophy-quotes-api.glitch.me/quotes')
-  .then(response => response.json())
-  .then(json => console.log(json))
-  
-  
+async function API(url){
+  const baseUrl = 'https://philosophy-quotes-api.glitch.me/';
+  const response = await fetch(baseUrl + url);
+  const data = await response.json();
+  return data;
+}
+
+API('quotes').then(console.log);
+
+
+
 //const firstQuote = document.getElementById("quote1");  
 
 /*This works when commented out by changing the first quote when clicked on but does not use the obtained jsonData 

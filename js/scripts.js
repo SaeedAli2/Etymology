@@ -57,20 +57,30 @@ async function API(url){
   return data;
 }
 
-API('quotes').then(console.log);
+API('quotes').then(
+  data => {
+    data.forEach(processQuote);
+  }
+);
 
-
-
-//const firstQuote = document.getElementById("quote1");  
-
-/*This works when commented out by changing the first quote when clicked on but does not use the obtained jsonData 
-x = "hello";
-var object, x;
-
-firstQuote.onclick = function() {
-    firstQuote.innerHTML = x; 
+function processQuote (item) {
+  const element = document.createElement("li")
+  element.textContent = item.quote;
+  const firstQuote = document.getElementById("quotes"); 
+  firstQuote.appendChild(element);
     
-}*/
+} 
+
+function rotate() {
+  const first = document.querySelector('#quotes li:first-child');
+  if(first) {
+    quotes.appendChild(first); 
+  
+  }
+  
+}
+
+setInterval(rotate,9000); 
 
 
 

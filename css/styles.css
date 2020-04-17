@@ -93,7 +93,6 @@ nav a:hover {
 ul {
   margin: auto;
   max-width: 70%;
-  line-height: 2.5em;
   padding: 20px 20px;
   border: 2px solid #333;
   background-color: bisque;
@@ -102,45 +101,52 @@ ul {
   list-style: none;
 }
 
-li {
-  border-radius: 10px;
-  transition: .2s;
-}
-
 li:hover {
   color: black;
   background: bisque;
   transform: scale(1.04);
   overflow: hidden;
 }  
+  
+#quotes li {
+  margin: 15px;
+  position: fixed;
+  transition: .4s;
+  opacity: 0;
+  border-radius: 15px;
+  box-shadow: 0 1px 4px 0 black;
+  padding: 20px 20px;
+  line-height: 1.5em;
+}
 
-#quote1 {
-  border: 1px solid #333;
+#quotes li:nth-child(1) {
   background-color: #deb887;
-  margin-bottom: 10px;
+  position: static;
+  opacity: 1;
 }
 
-#quote2 {
-  border: 1px solid #333;
-  background-color: #EAC391 ;
-  margin-bottom: 10px;
+#quotes li:nth-child(2) {
+  background-color: #EAC391;
+  position: static;
+  opacity: 1;
 }
 
-#quote3 {
-  border: 1px solid #333;
+#quotes li:nth-child(3) {
   background-color: #FFD19C;
-  margin-bottom: 10px;
+  position: static;
+  opacity: 1;
 }
 
-#quote4 {
-  border: 1px solid #333;
+#quotes li:nth-child(4) {
   background-color: #fcdea9;
-  margin-bottom: 10px;
+  position: static;
+  opacity: 1;
 }
 
-#quote5 {
-  border: 1px solid #333;
+#quotes li:nth-child(5) {
   background-color: #FFE4B5;
+  position: static;
+  opacity: 1;
 }
 
 /* Section 2 styles */
@@ -436,7 +442,6 @@ nav {
 ul {
   margin: auto;
   max-width: 80%;
-  line-height: 4em;
 }
 
 .cardleft {

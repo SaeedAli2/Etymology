@@ -355,6 +355,8 @@ img {
   box-shadow: 0 0 4px 1px black;
   background-color: blanchedalmond;
   border: none;
+  cursor: pointer;
+  position: sticky;
 }
 
 #btnscroll {

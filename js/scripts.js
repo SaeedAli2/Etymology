@@ -61,27 +61,38 @@ API('quotes').then(
   data => {
     data.forEach(processQuote);
   }
-);
+)
 
 function processQuote (item) {
-  const element = document.createElement("li")
-  element.textContent = item.quote;
+  const element = document.createElement("li");
+  element.textContent = item.quote + " " + "-" + " " + item.source; 
   const firstQuote = document.getElementById("quotes"); 
-  firstQuote.appendChild(element);
-    
+  firstQuote.appendChild(element);    
 } 
 
 function rotate() {
   const first = document.querySelector('#quotes li:first-child');
   if(first) {
     quotes.appendChild(first); 
-  
+    console.log("works");
   }
-  
 }
 
-setInterval(rotate,9000); 
+let pause = setInterval(rotate,7000);
 
+
+
+/*window.onscroll = function scrollPastQuotes() {
+  if (document.documentElement.scrollHeight > 813) 
+    clearInterval(pause); 
+   
+  //else { 
+    //pause = setInterval(rotate,1000);
+   
+
+  //}
+  console.log(document.documentElement.scrollTop);    
+}*/
 
 
 

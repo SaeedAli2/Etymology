@@ -26,7 +26,7 @@ h1 {
   margin: 0;
 }
 
-h4 {
+h3 {
   font-size: 14px;
 }
 
@@ -179,6 +179,7 @@ li:hover {
 
 .books {
   border: 1px solid #333;
+  border: groove;
 }
 
 .bookname {
@@ -222,6 +223,7 @@ img {
 
 .books2 {
   border: 1px solid #333;
+  border: groove;
 }
 
 /* Section 4 styles */

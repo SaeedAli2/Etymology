@@ -81,7 +81,7 @@ function rotate() {
 
 /*pause rotation*/
 
-let pause = setInterval(rotate,4000);
+let pause = setInterval(rotate,9000);
 
 window.addEventListener("scroll", pauseQuotes, {passive: true}); 
   
@@ -91,13 +91,13 @@ function pauseQuotes() {
   }
 }
 
-/*resume quotes*/
+/*resume quotes mentioned in read me file
 
-/*window.addEventListener("scroll", resumeQuotes, {passive: true}); 
+window.addEventListener("scroll", resumeQuotes, {passive: true}); 
 
 function resumeQuotes() {
   if(document.documentElement.scrollTop < 700 && clearInterval(pause))  {
-    pause = setInterval(rotate,4000);
+    pause = setInterval(rotate,9000);
   }
 }*/
 

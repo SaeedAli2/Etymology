@@ -13,7 +13,7 @@ body {
   background-repeat: round;   
   background-color: bisque; 
   animation-name: pageopen;
-  animation-duration: 5s;
+  animation-duration: 7s;
   margin: 0;
 }
 
@@ -151,6 +151,7 @@ li:hover {
   background-color: #FFE4B5;
   position: static;
   opacity: 1;
+  transition: ease-in 2s;
 }
 
 /* Section 2 styles */

@@ -7,12 +7,12 @@ const scrollUp = document.getElementById ("btnscroll");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.documentElement.scrollTop > 50) {
-      scrollUp.style.display = "block";
-    } else {
-      scrollUp.style.display = "none";
-    }
+  if (document.documentElement.scrollTop > 50) {
+    scrollUp.style.display = "block";
+  } else {
+    scrollUp.style.display = "none";
   }
+}
 
   scrollUp.addEventListener("click", function () {
     window.scrollTo(0, 0);
@@ -42,10 +42,10 @@ window.onclick = function(event) {
 const contactusForm = document.querySelector(".contactusform");
 
 contactusForm.addEventListener('submit', ev => {
-    console.log(ev);
-    modal.style.display = "block";
-    ev.preventDefault();
-    contactusForm.reset();
+  console.log(ev);
+  modal.style.display = "block";
+  ev.preventDefault();
+  contactusForm.reset();
 })
 
 /*quotes api*/
@@ -70,29 +70,35 @@ function processQuote (item) {
   firstQuote.appendChild(element);    
 } 
 
+/*quote rotation*/
+
 function rotate() {
   const first = document.querySelector('#quotes li:first-child');
   if(first) {
     quotes.appendChild(first); 
-    console.log("works");
   }
 }
 
-let pause = setInterval(rotate,7000);
+/*pause rotation*/
 
+let pause = setInterval(rotate,4000);
 
-
-/*window.onscroll = function scrollPastQuotes() {
-  if (document.documentElement.scrollHeight > 813) 
+window.addEventListener("scroll", pauseQuotes, {passive: true}); 
+  
+function pauseQuotes() {
+  if (document.documentElement.scrollTop > 700) {
     clearInterval(pause); 
-   
-  //else { 
-    //pause = setInterval(rotate,1000);
-   
+  }
+}
 
-  //}
-  console.log(document.documentElement.scrollTop);    
+/*resume quotes*/
+
+/*window.addEventListener("scroll", resumeQuotes, {passive: true}); 
+
+function resumeQuotes() {
+  if(document.documentElement.scrollTop < 700 && clearInterval(pause))  {
+    pause = setInterval(rotate,4000);
+  }
 }*/
-
 
 

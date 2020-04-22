@@ -26,6 +26,10 @@ h1 {
   margin: 0;
 }
 
+h4 {
+  font-size: 14px;
+}
+
 header {
   display: flex;
   padding: 2em;

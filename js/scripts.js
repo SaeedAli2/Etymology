@@ -81,7 +81,7 @@ function rotate() {
 
 /*pause rotation*/
 
-let pause = setInterval(rotate,9000);
+let pause = setInterval(rotate,8000);
 
 window.addEventListener("scroll", pauseQuotes, {passive: true}); 
   
@@ -97,7 +97,7 @@ window.addEventListener("scroll", resumeQuotes, {passive: true});
 
 function resumeQuotes() {
   if(document.documentElement.scrollTop < 700 && clearInterval(pause))  {
-    pause = setInterval(rotate,9000);
+    pause = setInterval(rotate,8000);
   }
 }*/
 

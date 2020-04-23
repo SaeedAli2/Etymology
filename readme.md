@@ -14,6 +14,7 @@ This website contains inspirational quotes alongside displaying a list of books 
 - API data taken from [here](https://philosophy-quotes-api.glitch.me/quotes).
 - Async/await using fetch adapted from [here](https://www.youtube.com/watch?v=h6Zo8cxCFoY).
 - Gradient effect for philosophical quotes inspired from [here](https://www.youtube.com/watch?v=dhLcyBCJ0r4).
+- Gradient colours found and used from [here](https://cssgradient.io/).
 - Git solutions implemented from [here](https://www.atlassian.com/git/tutorials/using-branches).
 - Scroll event listener adapted from [here](https://stackoverflow.com/questions/12522807/scroll-event-listener-javascript).
 - Gained beneficial knowledge from all labs, lectures and tutorials.

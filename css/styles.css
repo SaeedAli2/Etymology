@@ -151,13 +151,6 @@ li:hover {
   background-color: #FFE4B5;
   position: static;
   opacity: 1;
-  animation-name: fading;
-  animation-duration: 1s;
-}
-
-@keyframes fading {
-  from {opacity: 0;}
-  to {opacity: 1;}  
 }
 
 /* Section 2 styles */
@@ -461,6 +454,13 @@ ul {
 
 #quotes li:nth-child(5) {
   animation-duration: 3s;
+  animation-name: fading;
+  animation-duration: 1s;
+}
+
+@keyframes fading {
+  from {opacity: 0;}
+  to {opacity: 1;}  
 }
 
 .cardleft {

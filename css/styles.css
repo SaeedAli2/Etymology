@@ -151,6 +151,13 @@ li:hover {
   background-color: #FFE4B5;
   position: static;
   opacity: 1;
+  animation-name: fading;
+  animation-duration: 1s;
+}
+
+@keyframes fading {
+  from {opacity: 0;}
+  to {opacity: 1;}  
 }
 
 /* Section 2 styles */
@@ -404,6 +411,7 @@ img {
   animation-name: modalopen;
   animation-duration: 0.75s;
   background-position-x: 40%;  
+  background-position-y: center;
 }
 
 @keyframes modalopen {
@@ -449,6 +457,10 @@ nav {
 ul {
   margin: auto;
   max-width: 80%;
+}
+
+#quotes li:nth-child(5) {
+  animation-duration: 3s;
 }
 
 .cardleft {

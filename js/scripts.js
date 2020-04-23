@@ -42,7 +42,6 @@ window.onclick = function(event) {
 const contactusForm = document.querySelector(".contactusform");
 
 contactusForm.addEventListener('submit', ev => {
-  console.log(ev);
   modal.style.display = "block";
   ev.preventDefault();
   contactusForm.reset();
@@ -65,7 +64,7 @@ API('quotes').then(
 
 function processQuote (item) {
   const element = document.createElement("li");
-  element.textContent = item.quote + " " + "-" + " " + item.source; 
+  element.textContent = item.quote + " " + "-" + " " + item.source;  
   const firstQuote = document.getElementById("quotes"); 
   firstQuote.appendChild(element);    
 } 
